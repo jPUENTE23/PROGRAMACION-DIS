@@ -35,11 +35,12 @@ namespace Listas
                 lista2.Add(numl2);
             }
 
-            
+
             List<int> ListaResultads = ValidarListas(lista1, lista2);
-            Console.WriteLine("El valor {0} se repite: {1}", lista1[0], ListaResultads[0]);
-            Console.WriteLine("El valor {0} se repite: {1}", lista1[1], ListaResultads[1]);
-            Console.WriteLine("El valor {0} se repite: {1}", lista1[2], ListaResultads[2]);
+            for (int val = 0; val <cantVal1; val++)
+            {
+                Console.WriteLine("El valor {0} se repite: {1}", lista1[val], ListaResultads[val]);
+            }
 
         }
 
